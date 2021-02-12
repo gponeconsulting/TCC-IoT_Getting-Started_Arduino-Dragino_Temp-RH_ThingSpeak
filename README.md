@@ -1,12 +1,12 @@
-# ThingSpeak Guide (Temperature & Humidity with Arduino + Dragino Lora Shield)
+# ThingSpeak Guide (Temperature & Humidity with Arduino + Dragino Lora Shield OR SODAQ ExpLoRer)
 Up until now the data we're generating, receiving and decoding is not being stored or used. While there are many options for this next step, this guide will look at using [ThingSpeak](https://thingspeak.com/)
 
-This guide builds on the lessons learnt in the `Temperature & Humidity with Arduino + Dragino Lora Shield` and will make use of the application and device set up during the guide.
+This guide builds on the lessons learnt in the `Temperature & Humidity with Arduino + Dragino Lora Shield` or `Temperature & Humidity with SODAQ ExpLoRer` and will make use of the application and device set up during the guide.
 
 ## What you will need
 To follow along with this guide you will need not need any extra equipment. Just what you've already setup following the previous guides in this series.
 
-Therefore it's **important** make sure you have your Arduino + Dragino + Temp/RH setup and transmitting to The Things Network, and that The Things Network is decoding the messages correctly!
+Therefore it's **important** make sure you have your (Arduino + Dragino) OR (SODAQ ExpLoRer) + Temp/RH setup and transmitting to The Things Network, and that The Things Network is decoding the messages correctly!
 
 ## Step 1 - Set up ThingSpeak
 In order to store and make use of our data we will be creating a channel using ThingSpeak.
