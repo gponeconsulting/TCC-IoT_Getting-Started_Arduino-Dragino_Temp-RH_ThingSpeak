@@ -6,7 +6,7 @@ This guide builds on the lessons learnt in the `Temperature & Humidity with Ardu
 ## What you will need
 To follow along with this guide you will need not need any extra equipment. Just what you've already setup following the previous guides in this series.
 
-Therefore it's **important** make sure you have your (Arduino + Dragino) OR (SODAQ ExpLoRer) + Temp/RH setup and transmitting to The Things Stack, and that The Things Stack is decoding the messages correctly!
+Therefore it's **important** make sure you have your (Arduino + Dragino) OR (SODAQ ExpLoRer) + Temp/RH setup and transmitting to The Things Network, and that The Things Network is decoding the messages correctly!
 
 ## Step 1 - Set up ThingSpeak
 In order to store and make use of our data we will be creating a channel using ThingSpeak.
@@ -33,19 +33,18 @@ Checkout the API Keys tab, you will need the Write API Key in the next step!!
 
 ![Channel API Keys](readme-images/channel-api-keys.png)
 
-## Step 2 - Connect ThingSpeak to The Things Stack
-Now that your  ThingSpeak account has been created, and channel has been set up,  The Things Stack Application needs to send any data it receives to our new channel:
-1. Sign into The Things Stack
+## Step 2 - Connect ThingSpeak to The Things Network
+Now that your  ThingSpeak account has been created, and channel has been set up,  The Things Network Application needs to send any data it receives to our new channel:
+1. Sign into The Things Network
 1. Go to `Console > Applications` and select the application that you want to connect to ThingSpeak
     - _This will be the application setup in the previous guides of this series._
 1. Click on the `Integrations` heading
-1. Click on the `Webhooks` heading
-1. Click on the `Add webhook` button
+1. Click on the `add integration` button
 1. Click on the `ThingSpeak` option
-1. Enter a unique name for the integration process in the `Webhook ID` field
-1. Copy the `Write API key` from the `API Keys` section of the ThingSpeak channel created in Step 1 into the `API Key` field
+1. Enter a unique name for the integration process in the `Process ID` field
+1. Copy the `Write API key` from the `API Keys` section of the ThingSpeak channel created in Step 1 into the `Authorization` field
 1. Copy the `Channel ID` from the top of the ThingSpeak Channel created in Step 1 into the `Channel ID` field
-1. Click `Create thingspeak Webhook`
+1. Click `Add Integration`
 
 ![Integrations](readme-images/integrations.png)
 
